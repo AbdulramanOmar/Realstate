@@ -1,0 +1,99 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --black-color: #231e1c;
+  --text-color: #8d8d8d;
+  --primary-color: #1544ab;
+  --icon-color: #1594fe;
+  --option-color: #e3f2ff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.product {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.img-container {
+  width: 100%;
+  margin: auto;
+}
+.img-container > img {
+  max-width: 100%;
+  margin: auto;
+}
+.spans span {
+  padding: 10px;
+  background-color: var(--option-color);
+  font-weight: 500;
+  border-radius: 40px;
+  color: var(--black-color);
+  cursor: pointer;
+}
+.spans {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .spans {
+    flex-wrap: wrap;
+  }
+  .img-container > img {
+    margin-left: 0 !important;
+  }
+  span {
+    margin: auto;
+    padding: 5px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.tall {
+  height: 100vh;
+}

@@ -1,0 +1,77 @@
+ .hero {
+  padding-bottom: 60px;
+ }
+ main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+main h1 {
+  color: var(--black-color);
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  transform-origin: left bottom;
+  overflow: hidden;
+}
+
+.result-search {
+  margin-bottom: 30px;
+}
+
+main p {
+  margin: 20px 0;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .search-box {
+  margin: auto;
+  background-color: #fafafa;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 50%;
+}
+main .search-box input {
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 50px;
+  width: 100%;
+}
+main .search-box svg {
+  position: absolute;
+  right: 10px;
+}
+main .search-box svg:first-of-type {
+  right: 60px;
+  font-size: 26px;
+}
+main .search-box svg:last-of-type {
+  color: white;
+  background-color: var(--icon-color);
+  padding: 12px;
+  border-radius: 50%;
+}
+
+@media (max-width : 991px) {
+  main .search-box {
+    width:60% ;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  main .spans {
+    flex-wrap: wrap;
+  }
+
+  main span {
+    margin: auto;
+  }
+}

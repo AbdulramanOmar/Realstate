@@ -1,0 +1,121 @@
+.apartment {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.apartment h1 {
+  font-size: 40px;
+  color: var(--black-color);
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.apartment-content {
+  border: 1px solid var(--text-color);
+  width: 100%;
+  border-radius: 15px;
+  padding: 30px;
+}
+.apartment-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.apartment-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+.apartment-head h3 {
+    color: var(--black-color);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.apartment-progress h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.apartment-progress {
+    position: relative;
+}
+.apartment-progress > span {
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+.progrees-con {
+    width: 100%;
+    height: 7px;
+    background-color: #dddddd;
+    border-radius: 50px;
+    margin: 10px;
+    position: relative;
+}
+.progrees-con .progress {
+    position: absolute;
+    height: 6px;
+    background-color: var(--icon-color);
+    border-radius: 50px;
+    left: 0;
+}
+.apartment button:last-of-type {
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 15px 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    margin: 20px auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    transition: 0.5s;
+    color: black;
+}
+.apartment button:last-of-type::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--black-color);
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    transition: 1s;
+    z-index: -1;
+}
+.apartment button:last-of-type::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--black-color);
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+    transition: 1s;
+    z-index: -1;
+}
+.apartment button:last-of-type:hover::after,
+.apartment button:last-of-type:hover::before{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.apartment button:last-of-type:hover::after {
+    right: 0;
+}
+.apartment button:last-of-type:hover::before {
+    left: 0;
+}
+.apartment button:last-of-type:hover {
+    color: white;
+}

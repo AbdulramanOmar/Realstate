@@ -1,0 +1,86 @@
+/* .card {
+   display: grid;
+   grid-template-columns:  repeat(auto-fill,minmax(300px , 1fr));
+   gap: 20px;
+   padding-bottom: 50px;
+} */
+@media (max-width:991px) {
+    .silder {
+        margin: auto;
+    }
+}
+.card {
+    position: relative;
+}
+.Apartment {
+    border: 1px solid #fff;
+    position: absolute;
+    padding: 10px;
+    left: 10px;
+    top: 10px;
+    background: #fafafa52;
+    border-radius: 50px;
+    text-transform: uppercase;
+    z-index: 4;
+    color: var(--black-color);
+}
+.silder {
+    position: relative;
+}
+.silder h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.silder h1 img {
+    margin-left: 13px;
+    margin-bottom: -5px;
+    width: 24px;
+}
+.silder .text-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.silder .text-card p {
+    color: var(--text-color);
+}
+.silder .text-card p:last-of-type {
+    margin-right: 22px;
+}
+.silder .icons-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.silder .icons-card svg {
+    color: var(--text-color);
+    border-left: 1px solid var(--text-color);
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.silder .icons-card span  {
+    color: var(--text-color);
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.silder .icons-card button {
+    margin-right: 22px;
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.silder .icons-card button:hover {
+    background-color: var(--primary-color);
+    color: white !important;
+}
+.swiper-pagination {
+    position: relative;
+    bottom: 0;
+    
+}

@@ -1,0 +1,74 @@
+
+.properties-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.properties-head h1 {
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 50%;
+}
+.properties-head button {
+  border: 1px solid var(--icon-color);
+  padding: 15px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--icon-color);
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+.properties-head button:hover::after {
+  width: 100%;
+}
+.properties-head button:hover {
+    color: white;
+}
+.properties-head button::after {
+    content: "";
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  background: var(--icon-color);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  transition: 0.5s;
+  z-index: -1;
+}
+.properties-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.properties-nav svg {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  margin-right: 30px;
+  transition: 0.4s;
+}
+.properties-nav svg:hover {
+  color: white;
+  background-color: var(--icon-color);
+}
+@media (max-width: 767px) {
+  .properties-head h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+  .properties-head button {
+    display: none;
+  }
+  .properties-nav svg {
+    margin-right: 0;
+  }
+}
+/* .properties-nav  */
